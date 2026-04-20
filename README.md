@@ -1,5 +1,7 @@
 # Bind-Time Admissibility — Minimal Proof (GFB)
 
+![Bind-Time Admissibility](assets/bind-time-admissibility.png)
+
 A minimal, reproducible demonstration of execution-bound admissibility.
 
 ---
@@ -23,23 +25,7 @@ Three cases:
 
 ---
 
-## How It Works
-
-- sanitized fixtures simulate system state  
-- a receipt is generated at bind-time  
-- an independent verifier evaluates the receipt  
-- execution is allowed or blocked based on proof  
-
----
-
-## Run
-
-### Harness
-
-```bat
-python harness\run_harness.py --scenario clean_pass
-python harness\run_harness.py --scenario stale_block
-python harness\run_harness.py --scenario unverifiable_block
+## Run (Direct)
 
 ```bat
 python generate_receipt.py --fixture fixtures\pass.json --out receipts\pass_receipt.json
