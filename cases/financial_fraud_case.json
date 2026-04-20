@@ -1,0 +1,21 @@
+{
+  "action_type": "payment_release",
+  "proof_status": "valid",
+  "authority_status": "valid",
+  "dependency_status": "invalid",
+  "constraint_status": "valid",
+  "refusal_available": true,
+  "claims": {
+    "transaction_id": "TXN-88421",
+    "amount": "12500",
+    "currency": "CAD",
+    "beneficiary_status_at_generation": "verified",
+    "beneficiary_status_at_execution": "flagged_fraud",
+    "fraud_signal": "external fraud system updated after approval",
+    "risk": "payment appears approved but beneficiary is no longer valid at execution"
+  },
+  "policy": {
+    "policy_version": "2026-04-20",
+    "rule_set": "payment_fraud_prevention"
+  }
+}

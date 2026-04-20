@@ -1,0 +1,20 @@
+{
+  "action_type": "ai_decision_release",
+  "proof_status": "invalid",
+  "authority_status": "valid",
+  "dependency_status": "valid",
+  "constraint_status": "valid",
+  "refusal_available": true,
+  "claims": {
+    "model_output": "approve_recommendation",
+    "decision_context": "customer escalation response",
+    "policy_at_generation": "allowed",
+    "policy_at_execution": "restricted",
+    "change_event": "policy updated after output generation",
+    "risk": "output appears valid but no longer admissible under current policy"
+  },
+  "policy": {
+    "policy_version": "2026-04-20",
+    "rule_set": "ai_decision_boundary"
+  }
+}

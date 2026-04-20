@@ -1,0 +1,20 @@
+{
+  "action_type": "grid_switching_command",
+  "proof_status": "valid",
+  "authority_status": "valid",
+  "dependency_status": "invalid",
+  "constraint_status": "valid",
+  "refusal_available": true,
+  "claims": {
+    "command": "close_tie_switch",
+    "substation_state_at_generation": "stable",
+    "substation_state_at_execution": "fault_detected",
+    "telemetry_status": "degraded_after_approval",
+    "operator_intent": "restore_load_balance",
+    "risk": "switching command appears valid but present grid state no longer supports safe execution"
+  },
+  "policy": {
+    "policy_version": "2026-04-20",
+    "rule_set": "grid_switching_boundary"
+  }
+}

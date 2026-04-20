@@ -1,8 +1,8 @@
-# Bind-Time Admissibility — Minimal Proof (GFB)
+# Bind-Time Admissibility — Execution Harness (GFB)
 
 ![Bind-Time Admissibility](assets/bind-time-admissibility.png)
 
-A minimal, reproducible demonstration of execution-bound admissibility.
+A minimal, reproducible execution-bound admissibility gate.
 
 ---
 
@@ -15,13 +15,13 @@ If proof is invalid or cannot be established, execution is blocked.
 
 ---
 
-## What This Shows
+## What This Demonstrates
 
-Three cases:
+Three classes of execution failure:
 
-- valid present-state → PASS  
-- stale state → FAIL  
-- unverifiable / dependency failure → FAIL  
+- valid → outdated → blocked *(stale proof)*  
+- proof valid → dependency invalid → blocked *(dependency drift)*  
+- all valid → no refusal available → blocked *(refusal collapse)*  
 
 ---
 

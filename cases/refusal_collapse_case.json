@@ -1,0 +1,19 @@
+{
+  "action_type": "automated_release_commit",
+  "proof_status": "valid",
+  "authority_status": "valid",
+  "dependency_status": "valid",
+  "constraint_status": "valid",
+  "refusal_available": false,
+  "claims": {
+    "release_candidate": "approved",
+    "all_checks_status": "passed",
+    "rollback_window": "closed",
+    "operator_override": "unavailable",
+    "risk": "system cannot refuse at bind even though continuation is no longer optional"
+  },
+  "policy": {
+    "policy_version": "2026-04-20",
+    "rule_set": "release_commit_boundary"
+  }
+}
