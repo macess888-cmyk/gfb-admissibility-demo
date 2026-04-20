@@ -34,6 +34,13 @@ Three cases:
 
 ## Run
 
+### Harness
+
+```bat
+python harness\run_harness.py --scenario clean_pass
+python harness\run_harness.py --scenario stale_block
+python harness\run_harness.py --scenario unverifiable_block
+
 ```bat
 python generate_receipt.py --fixture fixtures\pass.json --out receipts\pass_receipt.json
 python verify_receipt.py --receipt receipts\pass_receipt.json
