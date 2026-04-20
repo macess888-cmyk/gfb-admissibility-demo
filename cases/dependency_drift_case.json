@@ -1,0 +1,19 @@
+{
+  "action_type": "payment_execution",
+  "proof_status": "valid",
+  "authority_status": "valid",
+  "dependency_status": "invalid",
+  "constraint_status": "valid",
+  "refusal_available": true,
+  "claims": {
+    "payment_intent": "approved",
+    "account_status_at_generation": "active",
+    "account_status_at_execution": "suspended",
+    "gateway_status": "reachable",
+    "risk": "execution proceeds on stale dependency state"
+  },
+  "policy": {
+    "policy_version": "2026-04-20",
+    "rule_set": "payment_execution_boundary"
+  }
+}

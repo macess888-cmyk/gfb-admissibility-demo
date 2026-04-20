@@ -1,0 +1,19 @@
+{
+  "action_type": "ai_policy_recommendation_release",
+  "proof_status": "invalid",
+  "authority_status": "valid",
+  "dependency_status": "valid",
+  "constraint_status": "valid",
+  "refusal_available": true,
+  "claims": {
+    "model_output": "approve_response",
+    "reason": "output generated under earlier policy state",
+    "current_policy_state": "updated_after_generation",
+    "generation_policy_state": "outdated",
+    "risk": "response appears valid but no longer matches present policy"
+  },
+  "policy": {
+    "policy_version": "2026-04-20",
+    "rule_set": "ai_interaction_boundary"
+  }
+}
