@@ -1,0 +1,17 @@
+{
+  "action_type": "refund_release",
+  "proof_status": "unverifiable",
+  "authority_status": "valid",
+  "dependency_status": "invalid",
+  "constraint_status": "valid",
+  "refusal_available": true,
+  "claims": {
+    "refund_window": "unknown",
+    "gateway_status": "timeout",
+    "account_status": "active"
+  },
+  "policy": {
+    "policy_version": "2026-04-19",
+    "rule_set": "refund_flow"
+  }
+}

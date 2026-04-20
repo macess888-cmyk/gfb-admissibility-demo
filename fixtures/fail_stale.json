@@ -1,0 +1,17 @@
+{
+  "action_type": "order_commit",
+  "proof_status": "invalid",
+  "authority_status": "valid",
+  "dependency_status": "valid",
+  "constraint_status": "valid",
+  "refusal_available": true,
+  "claims": {
+    "inventory_check": "stale",
+    "pricing_version": "approved_v3",
+    "payment_gateway": "reachable"
+  },
+  "policy": {
+    "policy_version": "2026-04-19",
+    "rule_set": "consumer_checkout"
+  }
+}
