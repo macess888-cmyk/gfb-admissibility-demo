@@ -1,0 +1,5 @@
+[
+  { "name": "clean_pass", "fixture": "fixtures/pass.json" },
+  { "name": "stale_block", "fixture": "fixtures/fail_stale.json" },
+  { "name": "unverifiable_block", "fixture": "fixtures/fail_unverifiable.json" }
+]
