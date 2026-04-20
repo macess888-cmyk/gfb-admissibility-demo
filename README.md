@@ -1,57 +1,38 @@
-# Proof Demo — Bind-Time Admissibility
+# Bind-Time Admissibility — Minimal Proof (GFB)
 
-## Purpose
+A minimal, reproducible demonstration of execution-bound admissibility.
 
-This is a minimal public-safe demonstration of a bind-time admissibility rule:
+---
+
+## Core Rule
 
 **No present-state proof at bind → no execution**
 
-The demo does not expose internal system state, proprietary logic, or hidden architecture.  
-It proves only that execution is allowed or blocked based on bind-time admissibility using sanitized fixtures, generated receipts, and an independent verifier.
+Execution is allowed only if validity can be proven at the exact moment of action.  
+If proof is invalid or cannot be established, execution is blocked.
 
 ---
 
-## Boundary Rule
+## What This Shows
 
-Execution is allowed only when required conditions are valid **at the moment of action**.
+Three cases:
 
-Earlier validation is not sufficient.
-
-This demo enforces:
-
-- present-state proof at bind
-- fail-closed behavior
-- independent receipt verification
-- PASS only when required statuses are valid
-- FAIL when proof is invalid or unverifiable
+- valid present-state → PASS  
+- stale state → FAIL  
+- unverifiable / dependency failure → FAIL  
 
 ---
 
-## Files
+## How It Works
 
-- `generate_receipt.py`  
-  Generates a minimal bind-time receipt from a sanitized fixture.
-
-- `verify_receipt.py`  
-  Independently verifies the generated receipt and returns PASS or FAIL.
-
-- `fixtures/pass.json`  
-  Valid present-state proof example.
-
-- `fixtures/fail_stale.json`  
-  Invalid proof example.
-
-- `fixtures/fail_unverifiable.json`  
-  Unverifiable proof / dependency failure example.
-
-- `receipts/*.json`  
-  Generated bind-time receipts.
+- sanitized fixtures simulate system state  
+- a receipt is generated at bind-time  
+- an independent verifier evaluates the receipt  
+- execution is allowed or blocked based on proof  
 
 ---
 
-## How to Run
-
-From the project directory:
+## Run
 
 ```bat
 python generate_receipt.py --fixture fixtures\pass.json --out receipts\pass_receipt.json
